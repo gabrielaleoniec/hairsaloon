@@ -1,0 +1,29 @@
+.article {
+  height: 100vh;
+}
+
+.separator {
+  background-color: #f9f9f9;
+  height: 2rem;
+}
+
+.tabContainer {
+  border: solid 0.5px #eee;
+  display: flex;
+}
+
+.tabContent {
+  padding: 0 1.3rem 1.5rem;
+}
+
+.tab {
+  cursor: pointer;
+  flex: 1 0 50%;
+  justify-content: center;
+  padding: 1.7rem 0;
+  text-align: center;
+}
+
+.active {
+  border-bottom: solid 2px #b69f58;
+}

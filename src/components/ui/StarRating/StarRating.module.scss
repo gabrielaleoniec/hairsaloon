@@ -1,0 +1,15 @@
+.star {
+  margin-left: 0.5rem;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.empty {
+  fill: transparent;
+}
+
+.opinions {
+  margin-left: 1rem;
+}
