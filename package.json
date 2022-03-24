@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "stylelint": "stylelint ./src/**/*.scss  -f tap --config ./config/.stylelintrc.json",
-    "stylelint:fix": "stylelint ./src/**/*.scss --config ./config/.stylelintrc.json --fix"
+    "stylelint": "stylelint ./src/**/*.scss ./src/**/*.css  -f tap --config ./config/.stylelintrc.json --custom-syntax postcss-scss",
+    "stylelint:fix": "stylelint ./src/**/*.scss ./src/**/*.css --config ./config/.stylelintrc.json --fix --custom-syntax postcss-scss"
   },
   "dependencies": {
     "next": "12.1.0",
