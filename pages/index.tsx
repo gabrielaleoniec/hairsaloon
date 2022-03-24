@@ -12,9 +12,7 @@ const List = () => {
           content="You really need to read this website because it's made with Next.js"
         />
       </Head>
-      <div>
-        <SalonList list={list} />
-      </div>
+      <SalonList list={list} />
     </>
   );
 };

@@ -20,7 +20,8 @@
     "sass": "^1.49.9",
     "stylelint-config-standard": "^25.0.0",
     "stylelint-config-standard-scss": "^3.0.0",
-    "stylelint-order": "^5.0.0"
+    "stylelint-order": "^5.0.0",
+    "swr": "^1.2.2"
   },
   "devDependencies": {
     "@types/node": "^17.0.22",

@@ -23,9 +23,10 @@ const Button = ({ setActiveTab, isActive, tabName }: Button) => (
 );
 
 const Salon = ({ salon }: { salon: SalonType }) => {
+  const [activeTab, setActiveTab] = useState("Info");
+  if (!salon) return null;
   const { image, name, address, openHours, phone, website, description } =
     salon;
-  const [activeTab, setActiveTab] = useState("Info");
   return (
     <article className={styles.article}>
       <SalonHeader image={image} name={name} />

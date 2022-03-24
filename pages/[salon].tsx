@@ -1,31 +1,34 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import SalonPage from "../src/components/features/Salon/Salon";
+import useSWR from "swr";
 
-const Salon = ({}): JSX.Element => {
-  const salon = {
-    id: 30528453,
-    slug: "Ms. Calista Vandervort III",
-    name: "Maxwell Bergstrom",
-    rate: 1,
-    address: "12220 Cassin Knoll\nSouth Rod, IN 07157",
-    image:
-      "https://images.pexels.com/photos/3059404/pexels-photo-3059404.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
-    phone: "(972) 552-9759",
-    website: "http://www.thompson.com/",
-    description:
-      "Ipsa aut facilis a error. Et ut nulla dignissimos voluptate assumenda sequi amet. Qui voluptatem quia ut rem quaerat. Ut blanditiis eos repellat laudantium.",
-  };
+const getSalon = async (url: string) => {
+  const response = await fetch(url);
+  return await response.json();
+};
+
+const endpoint = "/api/salon";
+
+const swrCallback = (slug: string | string[] | undefined) => {
+  return slug && typeof slug === "string" ? `${endpoint}?slug=${slug}` : null;
+};
+
+const Salon = (): JSX.Element => {
+  const router = useRouter();
+  const { salon: slug } = router.query;
+
+  const { data, error } = useSWR(swrCallback(slug), getSalon);
+
+  if (error) return <div>Failed to load</div>;
+  if (!data) return <div>Loading...</div>;
 
   return (
     <>
       <Head>
-        <title>Salons | My Cool Site</title>
-        <meta
-          name="description"
-          content="You really need to read this website because it's made with Next.js"
-        />
+        <title>Salons | {data?.name}</title>
       </Head>
-      <SalonPage salon={salon} />
+      <SalonPage salon={data} />
     </>
   );
 };
