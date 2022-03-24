@@ -7,13 +7,17 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "stylelint": "stylelint ./src/**/*.scss -f tap --config ./config/.stylelintrc"
+    "stylelint": "stylelint ./src/**/*.scss  -f tap --config ./config/.stylelintrc.json",
+    "stylelint:fix": "stylelint ./src/**/*.scss --config ./config/.stylelintrc.json --fix"
   },
   "dependencies": {
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "sass": "^1.49.9"
+    "sass": "^1.49.9",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-order": "^5.0.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.22",
@@ -21,7 +25,6 @@
     "eslint": "^8.11.0",
     "eslint-config-next": "12.1.0",
     "stylelint": "^14.6.0",
-    "stylelint-config-recommended": "^7.0.0",
     "typescript": "^4.6.2"
   }
 }
