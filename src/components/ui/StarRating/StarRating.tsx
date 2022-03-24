@@ -4,31 +4,41 @@ import styles from "./StarRating.module.scss";
 
 type StarRating = {
   rate: SalonType["rate"];
-  opinionsNo?: SalonType["opinionsNo"];
+  opinionNo?: SalonType["opinionNo"];
   starsNo?: number;
-  size?: "medium" | "large";
+  size?: "medium" | "small";
 };
+
+const star = (
+  i: number,
+  size: string,
+  rate: SalonType["rate"]
+): JSX.Element => {
+  return (
+    <span className={styles.star} key={i}>
+      <ReactSVG
+        src="/assets/icons/star.svg"
+        alt=""
+        className={`${size === "small" ? styles.small : ""} ${
+          i >= Number(rate) ? styles.empty : ""
+        }`}
+      />
+    </span>
+  );
+};
+
 const StarRating = ({
-  rate,
-  opinionsNo = 0,
+  rate = 0,
+  opinionNo = 0,
   starsNo = 5,
   size = "medium",
 }: StarRating): JSX.Element => {
+  if (!opinionNo) {
+    return <></>;
+  }
   const stars = [];
-  const sizePixels = size === "large" ? 12 : 11;
   for (let i = 0; i < starsNo; i++) {
-    stars.push(
-      <span className={styles.star}>
-        <ReactSVG
-          src="/assets/icons/star.svg"
-          height={sizePixels}
-          width={sizePixels}
-          alt=""
-          className={i < starsNo ? styles.empty : ""}
-          key={i}
-        />
-      </span>
-    );
+    stars.push(star(i, size, rate));
   }
   return (
     <div
@@ -36,7 +46,7 @@ const StarRating = ({
       className={styles.rating}
     >
       {stars}
-      <span className={styles.opinions}>({opinionsNo})</span>
+      <span className={styles.opinions}>({opinionNo})</span>
     </div>
   );
 };

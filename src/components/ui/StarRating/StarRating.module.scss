@@ -15,6 +15,13 @@
   }
 }
 
+.small {
+  svg {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+}
+
 .empty {
   path {
     fill: transparent;
