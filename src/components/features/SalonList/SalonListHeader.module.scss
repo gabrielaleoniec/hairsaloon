@@ -1,0 +1,15 @@
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 3.3rem 1.5rem 0.9rem;
+}
+
+.name {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.filter {
+  cursor: pointer;
+}

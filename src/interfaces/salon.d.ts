@@ -2,7 +2,8 @@ export type SalonType = {
   id: number;
   slug: string;
   name: string;
-  rate?: number;
+  rate?: number | null;
+  opinionNo?: number;
   image?: string;
   address: string;
   phone: string;
