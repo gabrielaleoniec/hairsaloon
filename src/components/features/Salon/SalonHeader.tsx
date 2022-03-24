@@ -35,7 +35,7 @@ const SalonHeader = ({ name, image }: SalonHeader) => {
           <Image src="/assets/icons/heart.svg" alt="" width={34} height={30} />
         </div>
         <div className={styles.nameRating}>
-          <h1>{name}</h1>
+          <h1 className={styles.name}>{name}</h1>
           <StarRating rate={5} opinionsNo={32} />
         </div>
       </div>
