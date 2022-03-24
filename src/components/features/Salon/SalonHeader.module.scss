@@ -17,15 +17,8 @@
   z-index: 1;
 }
 
-.name {
-  font-family: MillerBanner, "Helvetica Neue", sans-serif;
-  font-size: 2.2rem;
-  font-weight: 300;
-  letter-spacing: -0.15px;
-}
-
 .elements {
-  color: #ffffff;
+  color: #fff;
   height: 100%;
   position: relative;
   width: 100%;
@@ -42,10 +35,6 @@
   left: 0;
   position: absolute;
   top: 0;
-}
-
-.goBack {
-  cursor: pointer;
 }
 
 .favourite {

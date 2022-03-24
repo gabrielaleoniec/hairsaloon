@@ -1,5 +1,14 @@
+.rating {
+  display: flex;
+}
+
 .star {
+  align-self: center;
   margin-left: 0.5rem;
+
+  div {
+    display: inline;
+  }
 
   &:first-child {
     margin-left: 0;
@@ -7,9 +16,12 @@
 }
 
 .empty {
-  fill: transparent;
+  path {
+    fill: transparent;
+  }
 }
 
 .opinions {
+  align-self: center;
   margin-left: 1rem;
 }

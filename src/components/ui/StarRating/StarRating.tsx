@@ -1,9 +1,10 @@
-import Image from "next/image";
+import { ReactSVG } from "react-svg";
+import { SalonType } from "../../../interfaces/salon";
 import styles from "./StarRating.module.scss";
 
 type StarRating = {
-  rate: number;
-  opinionsNo?: number;
+  rate: SalonType["rate"];
+  opinionsNo?: SalonType["opinionsNo"];
   starsNo?: number;
   size?: "medium" | "large";
 };
@@ -18,7 +19,7 @@ const StarRating = ({
   for (let i = 0; i < starsNo; i++) {
     stars.push(
       <span className={styles.star}>
-        <Image
+        <ReactSVG
           src="/assets/icons/star.svg"
           height={sizePixels}
           width={sizePixels}
@@ -30,7 +31,10 @@ const StarRating = ({
     );
   }
   return (
-    <div title={`Rating is ${rate} out of ${starsNo}`}>
+    <div
+      title={`Rating is ${rate} out of ${starsNo}`}
+      className={styles.rating}
+    >
       {stars}
       <span className={styles.opinions}>({opinionsNo})</span>
     </div>

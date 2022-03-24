@@ -4,6 +4,6 @@
   "rules": {
     "order/properties-alphabetical-order": true,
     "order/order": ["custom-properties", "declarations"],
-    "selector-class-pattern": "^[a-zA-Z]+$"
+    "selector-class-pattern": "^[a-zA-Z1-9]+$"
   }
 }
