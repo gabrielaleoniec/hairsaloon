@@ -1,0 +1,22 @@
+.filter {
+  border: 1px solid #b69f58;
+  border-left-width: 0;
+  border-right-width: 0;
+  padding: 0 1.5rem;
+  position: relative;
+}
+
+.arrow {
+  transform: rotate(90deg);
+}
+
+.arrowDown {
+  transform: rotate(-90deg);
+}
+
+.choice {
+  align-items: center;
+  display: flex;
+  height: 5.2rem;
+  justify-content: space-between;
+}

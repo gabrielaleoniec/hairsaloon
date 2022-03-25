@@ -9,7 +9,23 @@
     "image": "https://images.pexels.com/photos/3059404/pexels-photo-3059404.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     "phone": "(972) 552-9759",
     "website": "http://www.thompson.com/",
-    "description": "Ipsa aut facilis a error. Et ut nulla dignissimos voluptate assumenda sequi amet. Qui voluptatem quia ut rem quaerat. Ut blanditiis eos repellat laudantium."
+    "description": "Ipsa aut facilis a error. Et ut nulla dignissimos voluptate assumenda sequi amet. Qui voluptatem quia ut rem quaerat. Ut blanditiis eos repellat laudantium.",
+    "services": [
+      {
+        "id": 1,
+        "service": "hår",
+        "price": 120,
+        "durationInMinutes": 20,
+        "closestAvailability": "2022-03-30T12:45"
+      },
+      {
+        "id": 2,
+        "service": "hår",
+        "price": 220,
+        "durationInMinutes": 60,
+        "closestAvailability": "2022-06-03T12:40"
+      }
+    ]
   },
   {
     "id": 8389,
@@ -18,10 +34,26 @@
     "rate": 2,
     "opinionNo": 5,
     "address": "88370 Bartholome Garden Suite 930\nPort Joelleport, VT 92816",
-    "image": "https://images.pexels.com/photos/696287/pexels-photo-696287.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+    "image": "https://images.pexels.com/photos/458381/pexels-photo-458381.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     "phone": "+1-347-953-8418",
     "website": "https://www.borer.biz/quo-dolores-accusamus-esse-aut",
-    "description": "Ullam voluptas qui fugit reiciendis. Sapiente impedit id voluptates omnis accusamus voluptatem. Aut aut non cum ut."
+    "description": "Ullam voluptas qui fugit reiciendis. Sapiente impedit id voluptates omnis accusamus voluptatem. Aut aut non cum ut.",
+    "services": [
+      {
+        "id": 1,
+        "service": "hair cut",
+        "price": 450,
+        "durationInMinutes": 20,
+        "closestAvailability": "Wed Mar 25 2015 12:00:00 GMT+0100"
+      },
+      {
+        "id": 2,
+        "service": "hair dye with eco products",
+        "price": 345,
+        "durationInMinutes": 60,
+        "closestAvailability": "Wed Mar 27 2015 17:00:00 GMT+0100"
+      }
+    ]
   },
   {
     "id": 606727,
@@ -33,7 +65,23 @@
     "image": "https://images.pexels.com/photos/3331486/pexels-photo-3331486.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
     "phone": "423-398-7984",
     "website": "http://www.mclaughlin.com/",
-    "description": "Velit facere consequuntur nihil et voluptatem. Temporibus aut cum nostrum et aut vel error. Libero provident voluptas eligendi sed explicabo."
+    "description": "Velit facere consequuntur nihil et voluptatem. Temporibus aut cum nostrum et aut vel error. Libero provident voluptas eligendi sed explicabo.",
+    "services": [
+      {
+        "id": 1,
+        "service": "hair cut",
+        "price": 140,
+        "durationInMinutes": 20,
+        "closestAvailability": "Wed Mar 25 2015 12:00:00 GMT+0100"
+      },
+      {
+        "id": 2,
+        "service": "hair cut and dye",
+        "price": 260,
+        "durationInMinutes": 60,
+        "closestAvailability": "Wed Mar 27 2015 17:00:00 GMT+0100"
+      }
+    ]
   },
   {
     "id": 938947,
@@ -45,7 +93,23 @@
     "image": "https://images.pexels.com/photos/3130920/pexels-photo-3130920.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     "phone": "(352) 208-2172",
     "website": "https://www.ortiz.com/harum-illo-ea-quia-iste-corporis-magnam-beatae-et",
-    "description": "Necessitatibus consectetur amet perferendis consequatur. Aut saepe qui pariatur sed voluptatem. Ut provident in soluta dolor omnis."
+    "description": "Necessitatibus consectetur amet perferendis consequatur. Aut saepe qui pariatur sed voluptatem. Ut provident in soluta dolor omnis.",
+    "services": [
+      {
+        "id": 1,
+        "service": "hair cut",
+        "price": 420,
+        "durationInMinutes": 20,
+        "closestAvailability": "Wed Mar 25 2015 12:00:00 GMT+0100"
+      },
+      {
+        "id": 2,
+        "service": "hair dye",
+        "price": 500,
+        "durationInMinutes": 60,
+        "closestAvailability": "Wed Mar 27 2015 17:00:00 GMT+0100"
+      }
+    ]
   },
   {
     "id": 744,
@@ -54,10 +118,26 @@
     "rate": null,
     "opinionNo": 0,
     "address": "8610 Bashirian Center Suite 803\nBoehmhaven, LA 97550-3329",
-    "image": "https://deckow.net/omnis-quisquam-est-qui-quasi-consequatur.html",
+    "image": "https://images.pexels.com/photos/4946515/pexels-photo-4946515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     "phone": "214.976.8347",
     "website": "http://www.bruen.com/",
-    "description": "Harum eos quisquam libero expedita. Delectus saepe itaque rem amet non consequatur."
+    "description": "Harum eos quisquam libero expedita. Delectus saepe itaque rem amet non consequatur.",
+    "services": [
+      {
+        "id": 1,
+        "service": "hair cut",
+        "price": 120,
+        "durationInMinutes": 20,
+        "closestAvailability": "Wed Mar 25 2015 12:00:00 GMT+0100"
+      },
+      {
+        "id": 2,
+        "service": "hair dye",
+        "price": 20,
+        "durationInMinutes": 60,
+        "closestAvailability": "Wed Mar 27 2015 17:00:00 GMT+0100"
+      }
+    ]
   },
   {
     "id": 101403635,
@@ -66,10 +146,26 @@
     "rate": 1,
     "opinionNo": 5,
     "address": "6217 Dooley Crescent\nPort Clotildeside, IN 11043-2180",
-    "image": "https://www.lehner.com/quos-magnam-nihil-enim-similique-consequatur",
+    "image": "https://images.pexels.com/photos/1399073/pexels-photo-1399073.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     "phone": "662.934.9289",
     "website": "http://www.gleason.com/consequatur-corporis-quia-sit-minima-doloribus-omnis-omnis",
-    "description": "Veritatis et nostrum labore. Facilis libero nam repellendus eaque numquam iure id. Unde vero itaque accusamus qui voluptas enim tempore."
+    "description": "Veritatis et nostrum labore. Facilis libero nam repellendus eaque numquam iure id. Unde vero itaque accusamus qui voluptas enim tempore.",
+    "services": [
+      {
+        "id": 1,
+        "service": "hair cut",
+        "price": 120,
+        "durationInMinutes": 580,
+        "closestAvailability": "Wed Mar 25 2015 12:00:00 GMT+0100"
+      },
+      {
+        "id": 2,
+        "service": "hair dye",
+        "price": 220,
+        "durationInMinutes": 600,
+        "closestAvailability": "Wed Mar 27 2015 17:00:00 GMT+0100"
+      }
+    ]
   },
   {
     "id": 2742,
@@ -78,9 +174,18 @@
     "rate": 5,
     "opinionNo": 6,
     "address": "6245 Gleason Ville\nHalstad, OK 29748-0252",
-    "image": "http://www.berge.info/",
+    "image": "https://images.pexels.com/photos/235490/pexels-photo-235490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     "phone": "(361) 564-5548",
     "website": "http://www.konopelski.com/",
-    "description": "Est esse quibusdam assumenda blanditiis magnam velit reprehenderit. Consequatur similique mollitia quaerat similique. Expedita facere veniam fugit distinctio beatae veniam tenetur."
+    "description": "Est esse quibusdam assumenda blanditiis magnam velit reprehenderit. Consequatur similique mollitia quaerat similique. Expedita facere veniam fugit distinctio beatae veniam tenetur.",
+    "services": [
+      {
+        "id": 1,
+        "service": "hair cut",
+        "price": 585,
+        "durationInMinutes": 20,
+        "closestAvailability": "Wed Mar 25 2015 12:00:00 GMT+0100"
+      }
+    ]
   }
 ]

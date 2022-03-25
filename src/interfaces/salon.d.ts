@@ -10,13 +10,13 @@ export type SalonType = {
   website?: string;
   description?: string;
   openHours?: string[];
-  serviceIds?: number[];
+  services?: ServiceType[];
 };
 
 export type ServiceType = {
   id: number;
-  type: "hair" | "nails" | "massage";
+  service: string;
   price: number;
   durationInMinutes: number;
-  closestAvailability: Date;
+  closestAvailability: string;
 };
