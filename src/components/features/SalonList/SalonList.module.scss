@@ -1,5 +1,5 @@
 .list {
   max-height: calc(100vh - 12.1rem);
-  overflow: scroll;
+  overflow-y: auto;
   padding: 0 1.5rem 1.1rem;
 }

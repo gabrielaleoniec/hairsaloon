@@ -20,7 +20,7 @@ const SalonHeader = ({ name, image }: SalonHeader) => {
         </div>
         <div className={styles.nameRating}>
           <h1 className="h1">{name}</h1>
-          <StarRating rate={5} opinionsNo={32} />
+          <StarRating rate={5} opinionNo={32} />
         </div>
       </div>
     </div>

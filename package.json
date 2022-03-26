@@ -11,6 +11,7 @@
     "stylelint:fix": "stylelint ./src/**/*.scss ./src/**/*.css --config ./config/.stylelintrc.json --fix --custom-syntax postcss-scss"
   },
   "dependencies": {
+    "moment": "^2.29.1",
     "next": "12.1.0",
     "postcss": "^8.4.12",
     "postcss-scss": "^4.0.3",

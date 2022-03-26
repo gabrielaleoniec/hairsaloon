@@ -2,7 +2,7 @@ import { SalonType, ServiceType } from "../../../interfaces/salon";
 import SalonListHeader from "./SalonListHeader";
 import style from "./SalonList.module.scss";
 import { useState } from "react";
-import Filter, { FilterType } from "./Filter";
+import Filter, { FilterType } from "../SalonListFilter/Filter";
 import ListItem from "./ListItem";
 
 const selectedServices = (services: ServiceType[], filter: FilterType) => {

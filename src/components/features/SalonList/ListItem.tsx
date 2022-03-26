@@ -1,3 +1,4 @@
+import moment from "moment";
 import { SalonType, ServiceType } from "../../../interfaces/salon";
 import StarRating from "../../ui/StarRating/StarRating";
 import GoToPage from "./GoToPage";
@@ -25,10 +26,11 @@ const ListItem = ({
 }) => {
   const { name, rate, opinionNo, address, slug } = salon;
   const { closestAvailability, price, durationInMinutes } = service;
+  const date = moment(closestAvailability).format("DD.MM.YY, HH:mm");
 
   return (
     <li className={styles.item}>
-      <div className={styles.time}>{closestAvailability}</div>
+      <div className={styles.time}>{date}</div>
       <div className={styles.details}>
         <h2 className="h2">{name}</h2>
         <StarRating rate={rate} opinionNo={opinionNo} size="small" />
