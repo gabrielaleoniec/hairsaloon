@@ -1,0 +1,28 @@
+{
+  "id": 30528453,
+  "slug": "sax-and-fon",
+  "name": "Sax & Fön",
+  "rate": 0,
+  "opinionNo": 0,
+  "address": "12220 Cassin Knoll\nSouth Rod, IN 07157",
+  "image": "https://images.pexels.com/photos/3059404/pexels-photo-3059404.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+  "phone": "(972) 552-9759",
+  "website": "http://www.thompson.com/",
+  "description": "Ipsa aut facilis a error. Et ut nulla dignissimos voluptate assumenda sequi amet. Qui voluptatem quia ut rem quaerat. Ut blanditiis eos repellat laudantium.",
+  "services": [
+    {
+      "id": 1,
+      "service": "hår",
+      "price": 120,
+      "durationInMinutes": 20,
+      "closestAvailability": "2022-03-30T12:45"
+    },
+    {
+      "id": 2,
+      "service": "hår",
+      "price": 220,
+      "durationInMinutes": 60,
+      "closestAvailability": "2022-06-03T12:40"
+    }
+  ]
+}
