@@ -17,6 +17,7 @@ const Button = ({ setActiveTab, isActive, tabName }: Button) => (
       setActiveTab(tabName);
     }}
     className={`${styles.tab}  ${isActive ? styles.active : ""}`}
+    data-testid={tabName.toLowerCase().replaceAll(/^w/g, "")}
   >
     {tabName}
   </div>
@@ -43,19 +44,17 @@ const Salon = ({ salon }: { salon: SalonType }) => {
         />
       </div>
       <div className={styles.separator}></div>
-      <SalonInfo
-        isVisible={activeTab === "Info"}
-        address={address}
-        phone={phone}
-        website={website}
-        description={description}
-        openHours={openHours}
-        className={styles.tabContent}
-      />
-      <Schema
-        isVisible={activeTab === "Schema"}
-        className={styles.tabContent}
-      />
+      {activeTab == "Info" && (
+        <SalonInfo
+          address={address}
+          phone={phone}
+          website={website}
+          description={description}
+          openHours={openHours}
+          className={styles.tabContent}
+        />
+      )}
+      {activeTab === "Schema" && <Schema className={styles.tabContent} />}
     </article>
   );
 };

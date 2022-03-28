@@ -1,10 +1,9 @@
 type Schema = {
-  isVisible: boolean;
   className?: string;
 };
 
-const Schema = ({ isVisible, className = "" }: Schema) => (
-  <div className={`${className} ${isVisible ? "" : "hidden"}`}>
+const Schema = ({ className = "" }: Schema) => (
+  <div className={`${className}`}>
     <h2 className="srOnly">Schema</h2>
   </div>
 );

@@ -9,7 +9,7 @@ export type SalonType = {
   phone: string;
   website?: string;
   description?: string;
-  openHours?: string[];
+  openHours?: OpenHoursWeek;
   services?: ServiceType[];
 };
 
@@ -20,3 +20,28 @@ export type ServiceType = {
   durationInMinutes: number;
   closestAvailability: string;
 };
+
+export type OpenHoursWeek = {
+  Mon: OpenHoursDay;
+  Tue: OpenHoursDay;
+  Wed: OpenHoursDay;
+  Thu: OpenHoursDay;
+  Fri: OpenHoursDay;
+  Sat: OpenHoursDay;
+  Sun: OpenHoursDay;
+};
+
+export type OpenHoursDay = {
+  start: string;
+  end: string;
+} | null;
+
+export enum DayOfWeek {
+  Mon,
+  Tue,
+  Wed,
+  Thu,
+  Fri,
+  Sat,
+  Sun,
+}

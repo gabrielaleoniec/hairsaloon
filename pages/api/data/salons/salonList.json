@@ -10,6 +10,15 @@
     "phone": "(972) 552-9759",
     "website": "http://www.thompson.com/",
     "description": "Ipsa aut facilis a error. Et ut nulla dignissimos voluptate assumenda sequi amet. Qui voluptatem quia ut rem quaerat. Ut blanditiis eos repellat laudantium.",
+    "openHours": {
+      "Mon": { "start": "12:00", "end": "19:00" },
+      "Tue": { "start": "09:00", "end": "20:00" },
+      "Wed": { "start": "09:00", "end": "20:00" },
+      "Thu": { "start": "09:00", "end": "20:00" },
+      "Fri": { "start": "09:00", "end": "20:00" },
+      "Sat": null,
+      "Sun": null
+    },
     "services": [
       {
         "id": 1,
