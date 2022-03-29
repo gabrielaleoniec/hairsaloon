@@ -20,7 +20,14 @@ const SalonListHeader = ({ isFilter, setIsFilter }: SalonListHeader) => (
       onClick={() => {
         setIsFilter(!isFilter);
       }}
+      onKeyUp={(e) => {
+        if (e.key === "Enter") {
+          setIsFilter(!isFilter);
+        }
+      }}
       className={styles.filter}
+      tabIndex={0}
+      role="button"
     />
   </div>
 );

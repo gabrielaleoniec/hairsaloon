@@ -5,6 +5,11 @@
   padding: 3.3rem 1.5rem 2.4rem;
   position: relative;
   width: 100%;
+
+  *:focus {
+    border: none;
+    outline: 1px solid white;
+  }
 }
 
 .veil {

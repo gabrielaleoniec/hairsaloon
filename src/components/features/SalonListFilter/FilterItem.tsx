@@ -10,13 +10,23 @@ type FilterItem = {
 export const FilterItem = ({ filter, setFilter }: FilterItem) => {
   if (filter.min === 0 && filter.max === null) {
     return (
-      <li className={style.item} onClick={() => setFilter(filter)}>
+      <li className={style.item} onClick={() => setFilter(filter)} tabIndex={0}>
         Show all
       </li>
     );
   }
   return (
-    <li className={style.item} onClick={() => setFilter(filter)}>
+    <li
+      className={style.item}
+      onClick={() => setFilter(filter)}
+      onKeyUp={(e) => {
+        if (e.key === "Enter") {
+          setFilter(filter);
+        }
+      }}
+      tabIndex={0}
+      role="listitem"
+    >
       Pris {filter.min} - {filter.max} kr
     </li>
   );

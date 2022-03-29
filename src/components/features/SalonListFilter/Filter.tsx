@@ -14,7 +14,14 @@ const Filter = ({ filter, setFilter }: FilterItem) => {
 
   return (
     <div className={style.filter}>
-      <div onClick={() => setFilterHidden(!filterHidden)}>
+      <div
+        onClick={() => setFilterHidden(!filterHidden)}
+        onKeyUp={(e) => {
+          if (e.key === "Enter") {
+            setFilterHidden(!filterHidden);
+          }
+        }}
+      >
         <div className={style.choice}>
           {typeof filter.min == "number" && filter.max
             ? `Pris ${filter.min} - ${filter.max} kr`
@@ -22,6 +29,8 @@ const Filter = ({ filter, setFilter }: FilterItem) => {
 
           <div
             className={`${!filterHidden ? style.arrowDown : ""} ${style.arrow}`}
+            tabIndex={0}
+            role="button"
           >
             <ReactSVG src="/assets/icons/arrow_s_r.svg" width={8} height={11} />
           </div>

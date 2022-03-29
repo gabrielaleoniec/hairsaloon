@@ -15,6 +15,13 @@ const GoToPage = ({ slug }: GoToPage) => {
       onClick={() => {
         router.push(`/${slug}`);
       }}
+      onKeyUp={(e) => {
+        if (e.key === "Enter") {
+          router.push(`/${slug}`);
+        }
+      }}
+      tabIndex={0}
+      role="button"
     >
       <ReactSVG src="/assets/icons/arrow_s_r.svg" width={8} height={11} />
     </div>

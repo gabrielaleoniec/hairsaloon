@@ -14,8 +14,8 @@ const SalonHeader = ({ name, image }: SalonHeader) => {
     <div className={styles.header} style={{ backgroundImage: `url(${image})` }}>
       <div className={styles.veil} />
       <div className={styles.elements}>
-        <GoBack />
-        <div className={styles.favourite}>
+        <GoBack url={"/"} />
+        <div className={styles.favourite} tabIndex={0} role="button">
           <ReactSVG src="/assets/icons/heart.svg" />
         </div>
         <div className={styles.nameRating}>

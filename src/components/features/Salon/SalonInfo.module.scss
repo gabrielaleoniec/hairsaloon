@@ -8,6 +8,10 @@
   &:nth-child(2) {
     border-top-width: 0;
   }
+
+  *:focus {
+    outline: 1px solid #202020;
+  }
 }
 
 .address {

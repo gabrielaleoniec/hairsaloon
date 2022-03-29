@@ -40,7 +40,11 @@ const Website = ({ website }: { website: SalonInfo["website"] }) => (
 );
 
 const Phone = ({ phone }: { phone: SalonInfo["phone"] }) => (
-  <div className={`${styles.data} ${styles.phone}`}>{phone}</div>
+  <div className={`${styles.data} ${styles.phone}`}>
+    <a href={`tel:${phone.replace(/\s/, "")}`} aria-label="Phone number">
+      {phone}
+    </a>
+  </div>
 );
 
 const SalonInfo = ({

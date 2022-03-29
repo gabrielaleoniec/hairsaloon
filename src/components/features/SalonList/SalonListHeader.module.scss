@@ -3,6 +3,10 @@
   display: flex;
   justify-content: center;
   padding: 3.3rem 1.5rem 0.9rem;
+
+  *:focus {
+    outline: 1px solid #202020;
+  }
 }
 
 .name {
@@ -12,4 +16,5 @@
 
 .filter {
   cursor: pointer;
+  padding: 0.5rem;
 }

@@ -16,8 +16,15 @@ const Button = ({ setActiveTab, isActive, tabName }: Button) => (
     onClick={() => {
       setActiveTab(tabName);
     }}
+    onKeyUp={(e) => {
+      if (e.key === "Enter") {
+        setActiveTab(tabName);
+      }
+    }}
     className={`${styles.tab}  ${isActive ? styles.active : ""}`}
     data-testid={tabName.toLowerCase().replaceAll(/^w/g, "")}
+    tabIndex={0}
+    role="tab"
   >
     {tabName}
   </div>
@@ -31,7 +38,7 @@ const Salon = ({ salon }: { salon: SalonType }) => {
   return (
     <article className={styles.article}>
       <SalonHeader image={image} name={name} />
-      <div className={styles.tabContainer}>
+      <div className={styles.tabContainer} role="tablist">
         <Button
           setActiveTab={setActiveTab}
           tabName="Info"

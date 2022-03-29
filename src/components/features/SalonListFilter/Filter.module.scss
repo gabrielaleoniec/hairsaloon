@@ -4,10 +4,16 @@
   border-right-width: 0;
   padding: 0 1.5rem;
   position: relative;
+
+  *:focus {
+    outline: 1px solid #202020;
+  }
 }
 
 .arrow {
+  cursor: pointer;
   transform: rotate(90deg);
+  padding: 0.5rem;
 }
 
 .arrowDown {
