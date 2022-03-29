@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "format": "prettier --write ./",
     "lint": "next lint",
     "stylelint": "stylelint ./src/**/*.scss ./src/**/*.css  -f tap --config ./config/.stylelintrc.json --custom-syntax postcss-scss",
     "stylelint:fix": "stylelint ./src/**/*.scss ./src/**/*.css --config ./config/.stylelintrc.json --fix --custom-syntax postcss-scss",
@@ -40,6 +41,7 @@
     "eslint-config-next": "12.1.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
+    "prettier": "^2.6.1",
     "stylelint": "^14.6.0",
     "typescript": "^4.6.2"
   },
